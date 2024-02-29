@@ -15,27 +15,7 @@
       content="JogjaGift, Jogja Parcel, Parcel Jogja, Hampers Jogja, Jogja Hampers, Beli Parcel Jogja harga murah & grosir Januari 2024 , Kami melayani pemesanan parcel, hampers, karangan bunga papan, buket bunga, parcel buah,  kado, dll. Isi parcelnya pun beragam dengan tampilan yang menarik. Parcel tidak hanya diberikan saat hari besar agama saja, tetapi Anda juga bisa mengirimkan parcel ini sebagai tanda kasih kepada orang tua, teman, pasangan maupun kolega bisnis."
     />
     <meta name="author" content="JogaGift Parcel" />
-
-    <script>
-      var title = window.location.pathname
-        .replace(/(%20)/g, " ")
-        .replace(/(.html)/g, "")
-        .replace(/(-)/g, " ")
-        .replace(/(_)/g, " ")
-        .split("/");
-      var newPathname = "";
-      for (i = 1; i < title.length; i++) {
-        newPathname += " - ";
-        newPathname += title[i];
-      }
-      document.title = "JogaGift Harmony"+Capitalize(newPathname);
-      function Capitalize(str)
-{  return str.replace (/\w\S*/g, 
-      function(txt)
-      {  return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); } );
-}
-</script>
-    </script>
+    <title>JogaGift Harmony - Harga Parcel Jogja & Hampers Jogja</title>
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
@@ -77,7 +57,7 @@
   <body id="page-top">
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/#page-top"
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"
           >JogjaGift Harmony</a
         >
         <button
@@ -140,7 +120,7 @@
           alt=""
         />
         <!-- Masthead Heading-->
-        <h1 class="masthead-heading mb-0" id="heading" >JogjaGift Harmony</h1>
+        <h1 class="masthead-heading mb-0">JogjaGift Harmony</h1>
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
           <div class="divider-custom-line"></div>
@@ -150,18 +130,52 @@
         <div class="col-lg-4 mb-5 mb-lg-0">
           <a
             class="btn btn-outline-light btn-social mx-1"
-            href="https://web.facebook.com/JogjaGiftHarmony"
+            href="https://www.facebook.com/StartBootstrap"
             ><i class="fab fa-fw fa-facebook-f"></i></a
           ><a
             class="btn btn-outline-light btn-social mx-1"
-            href="https://www.instagram.com/jogjagift_parcel"
-            ><i class="fab fa-fw fa-instagram"></i></a
-          >
+            href="https://www.twitter.com/sbootstrap"
+            ><i class="fab fa-fw fa-twitter"></i></a
+          ><a
+            class="btn btn-outline-light btn-social mx-1"
+            href="https://www.linkedin.com/in/startbootstrap"
+            ><i class="fab fa-fw fa-linkedin-in"></i></a
+          ><a
+            class="btn btn-outline-light btn-social mx-1"
+            href="https://www.dribble.com/startbootstrap"
+            ><i class="fab fa-fw fa-dribbble"></i
+          ></a>
         </div>
         <!-- Masthead Subheading-->
-         <p class="pre-wrap masthead-subheading font-weight-light mb-0" >
-          Melayani Pemesanan <a class="btn btn-secondary" href="/Parcel Makanan" center="">Parcel Makanan </a> - <a class="btn btn-secondary" href="/Parcel Buah" center="">Parcel Buah</a> - <a class="btn btn-secondary" href="/Parcel Kramik" center="">Parcel Kramik</a> -
-          <a class="btn btn-secondary" href="/Parcel Sembako" center="">Parcel Sembako</a> - <a class="btn btn-secondary" href="/Hampers Buah" center="">Hampers Buah</a> - <a class="btn btn-secondary" href="/Hampers Alat Sholat" center="">Hampers Alat Sholat</a> - <a class="btn btn-secondary" href="/Parcel Kramik" center="">Papan Bunga</a>
+        <p class="pre-wrap masthead-subheading font-weight-light mb-0">
+          Melayani Pemesanan
+          <a class="btn btn-secondary" href="/Parcel Makanan" center=""
+            >Parcel Makanan
+          </a>
+          -
+          <a class="btn btn-secondary" href="/Parcel Buah" center=""
+            >Parcel Buah</a
+          >
+          -
+          <a class="btn btn-secondary" href="/Parcel Kramik" center=""
+            >Parcel Kramik</a
+          >
+          -
+          <a class="btn btn-secondary" href="/Parcel Sembako" center=""
+            >Parcel Sembako</a
+          >
+          -
+          <a class="btn btn-secondary" href="/Hampers Buah" center=""
+            >Hampers Buah</a
+          >
+          -
+          <a class="btn btn-secondary" href="/Hampers Alat Sholat" center=""
+            >Hampers Alat Sholat</a
+          >
+          -
+          <a class="btn btn-secondary" href="/Parcel Kramik" center=""
+            >Papan Bunga</a
+          >
         </p>
       </div>
     </header>
@@ -601,7 +615,6 @@
     </script>
 
     <script type="text/javascript">
-      document.getElementById("heading").innerHTML +=Capitalize(newPathname);
       $.getJSON(
         "https://raw.githubusercontent.com/hsevenbdl/parcel/main/public/hampers.json",
         function (result) {
