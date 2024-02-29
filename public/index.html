@@ -19,26 +19,8 @@
       content="JogjaGift, Jogja Parcel, Parcel Jogja, Hampers Jogja, Jogja Hampers, Beli Parcel Jogja harga murah & grosir Januari 2024 , Kami melayani pemesanan parcel, hampers, karangan bunga papan, buket bunga, parcel buah,  kado, dll. Isi parcelnya pun beragam dengan tampilan yang menarik. Parcel tidak hanya diberikan saat hari besar agama saja, tetapi Anda juga bisa mengirimkan parcel ini sebagai tanda kasih kepada orang tua, teman, pasangan maupun kolega bisnis."
     />
     <meta name="author" content="JogaGift Parcel" />
+    <title>JogaGift Harmony - Harga Parcel Jogja & Hampers Jogja</title>
 
-    <script>
-      var title = window.location.pathname
-        .replace(/(%20)/g, " ")
-        .replace(/(.html)/g, "")
-        .replace(/(-)/g, " ")
-        .replace(/(_)/g, " ")
-        .split("/");
-      var newPathname = "";
-      for (i = 1; i < title.length; i++) {
-        newPathname += " - ";
-        newPathname += title[i];
-      }
-      document.title = "JogaGift Harmony"+Capitalize(newPathname);
-      function Capitalize(str)
-{  return str.replace (/\w\S*/g, 
-      function(txt)
-      {  return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); } );
-}
-</script>
 
     <!-- Font Awesome icons (free version)-->
     <script
@@ -162,8 +144,6 @@
             ><i class="fab fa-fw fa-instagram"></i></a
           >
         </div>
-        <p class="pre-wrap masthead-subheading font-weight-light mb-0" ><!-- Masthead Subheading-->
-        adalah penyedia parcel dan hampers yang berkomitmen menghadirkan kebahagiaan melalui produk berkualitas dengan pilihan yang luas, membuat momen spesial anda lebih istimewa."</p>
          <p class="pre-wrap masthead-subheading font-weight-light mb-0" >
           Melayani Pemesanan <a class="btn btn-secondary" href="/Parcel Makanan" center="">Parcel Makanan </a> - <a class="btn btn-secondary" href="/Parcel Buah" center="">Parcel Buah</a> - <a class="btn btn-secondary" href="/Parcel Kramik" center="">Parcel Kramik</a> -
           <a class="btn btn-secondary" href="/Parcel Sembako" center="">Parcel Sembako</a> - <a class="btn btn-secondary" href="/Hampers Buah" center="">Hampers Buah</a> - <a class="btn btn-secondary" href="/Hampers Alat Sholat" center="">Hampers Alat Sholat</a> - <a class="btn btn-secondary" href="/Papan Bunga" center="">Papan Bunga</a> +62 895-4019-45628
@@ -606,7 +586,7 @@
     </script>
 
     <script type="text/javascript">
-      document.getElementById("heading").innerHTML +=Capitalize(newPathname);
+      document.getElementById("heading").innerHTML +="";
       $.getJSON(
         "https://raw.githubusercontent.com/hsevenbdl/parcel/main/public/hampers.json",
         function (result) {
