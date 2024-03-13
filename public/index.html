@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    	<meta property="og:site_name" content="JogjaGift Harmony - 62895401945628" />
+    	<meta property="og:site_name" content="JogjaGift Harmony" />
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="en_US" />
 
@@ -590,41 +590,41 @@
         "https://raw.githubusercontent.com/hsevenbdl/parcel/main/public/hampers.json",
         function (result) {
           console.log(result["ok"]);
-          var m = result["ok"];
-          $.each(m, function (i) {
+          var mk = result["ok"];
+          $.each(mk, function (i) {
             document.getElementById("datahampers").innerHTML +=
               '<div class="col-md-6 col-lg-4 mb-5">' +
               '<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModa2' +
-              m[i].no +
+              km[i].no +
               '">  <div class="text-center">' +
               "<h><strong>" +
-              m[i].nama +
+              mk[i].nama +
               "</strong></h></BR> </div>" +
               '<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">' +
               '<div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>' +
               '</div><img class="img-fluid" src="' +
-              m[i].gambar +
+              mk[i].gambar +
               '" alt="Log Cabin"/></div>' +
               '<center><a class="btn btn-secondary w-100" href="' +
-              m[i].link +
+              mk[i].link +
               '" center></i>Pesan Sekarang</a></center></div>';
 
             document.getElementById("modalx").innerHTML +=
               '<div class="portfolio-modal modal fade" id="portfolioModa2' +
-              m[i].no +
+              mk[i].no +
               '" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label"  aria-hidden="true" >' +
               '<div class="modal-dialog modal-xl" role="document"> <div class="modal-content"> <button class="close"  type="button" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true"><i class="fas fa-times"></i></span></button>' +
               '<div class="modal-body text-center"><div class="container"><div class="row justify-content-center"><div class="col-lg-8"><!-- Portfolio Modal - Title-->' +
               '<h2 class="portfolio-modal-title text-secondary mb-0">' +
-              m[i].nama +
+              mk[i].nama +
               "</h2>" +
               '<!-- Icon Divider--><div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"> <i class="fas fa-star"></i></div><div class="divider-custom-line"></div></div>' +
               '<!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="' +
-              m[i].gambar +
+              mk[i].gambar +
               '" alt="Log Cabin"/>' +
               "<!-- Portfolio Modal - Text-->" +
               '<p class="mb-5">' +
-              m[i].deskripsi +
+              mk[i].deskripsi +
               "</p>" +
               '<button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>' +
               "</div></div></div></div></div></div></div>";
@@ -638,41 +638,41 @@
         "https://raw.githubusercontent.com/hsevenbdl/parcel/main/public/papanbunga.json",
         function (result) {
           console.log(result["ok"]);
-          var m = result["ok"];
-          $.each(m, function (i) {
+          var ms = result["ok"];
+          $.each(ms, function (i) {
             document.getElementById("datapapan").innerHTML +=
               '<div class="col-md-6 col-lg-4 mb-5">' +
               '<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModa3' +
-              m[i].no +
+              ms[i].no +
               '">  <div class="text-center">' +
               "<h><strong>" +
-              m[i].nama +
+              ms[i].nama +
               "</strong></h></BR> </div>" +
               '<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">' +
               '<div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>' +
               '</div><img class="img-fluid" src="' +
-              m[i].gambar +
+              ms[i].gambar +
               '" alt="Log Cabin"/></div>' +
               '<center><a class="btn btn-primary w-100" href="' +
-              m[i].link +
+              ms[i].link +
               '" center></i>Pesan Sekarang</a></center></div>';
 
             document.getElementById("modalx").innerHTML +=
               '<div class="portfolio-modal modal fade" id="portfolioModa3' +
-              m[i].no +
+              ms[i].no +
               '" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label"  aria-hidden="true" >' +
               '<div class="modal-dialog modal-xl" role="document"> <div class="modal-content"> <button class="close"  type="button" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true"><i class="fas fa-times"></i></span></button>' +
               '<div class="modal-body text-center"><div class="container"><div class="row justify-content-center"><div class="col-lg-8"><!-- Portfolio Modal - Title-->' +
               '<h2 class="portfolio-modal-title text-secondary mb-0">' +
-              m[i].nama +
+              ms[i].nama +
               "</h2>" +
               '<!-- Icon Divider--><div class="divider-custom"><div class="divider-custom-line"></div><div class="divider-custom-icon"> <i class="fas fa-star"></i></div><div class="divider-custom-line"></div></div>' +
               '<!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="' +
-              m[i].gambar +
+              ms[i].gambar +
               '" alt="Log Cabin"/>' +
               "<!-- Portfolio Modal - Text-->" +
               '<p class="mb-5">' +
-              m[i].deskripsi +
+              ms[i].deskripsi +
               "</p>" +
               '<button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>' +
               "</div></div></div></div></div></div></div>";
