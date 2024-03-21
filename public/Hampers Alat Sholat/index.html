@@ -96,17 +96,18 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#parcel"
-                >PARCEL</a
+                href="#hamper"
+                >HAMPERS</a
               >
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#hamper"
-                >HAMPERS</a
+                href="#parcel"
+                >PARCEL</a
               >
             </li>
+           
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
@@ -165,12 +166,12 @@
         </p>
       </div>
     </header>
-    <section class="page-section portfolio" id="parcel">
+    <section class="page-section portfolio" id="hamper">
       <div class="container">
         <!-- Portfolio Section Heading-->
         <div class="text-center">
           <h2 class="page-section-heading text-secondary mb-0 d-inline-block">
-            PARCEL
+            HAMPERS
           </h2>
         </div>
         <!-- Icon Divider-->
@@ -187,12 +188,12 @@
     </section>
     <!-- Portfolio Modal-->
 
-    <section class="page-section bg-primary text-white portfolio" id="hamper">
+    <section class="page-section bg-primary text-white portfolio" id="parcel">
       <div class="container">
         <!-- About Section Heading-->
         <div class="text-center">
           <h2 class="page-section-heading d-inline-block text-white">
-            HAMPERS
+            PARCEL
           </h2>
         </div>
         <!-- Icon Divider-->
@@ -212,7 +213,7 @@
         <!-- Portfolio Section Heading-->
         <div class="text-center">
           <h2 class="page-section-heading text-secondary mb-0 d-inline-block">
-            PAPAN BUNGA
+            GALERY
           </h2>
         </div>
         <!-- Icon Divider-->
@@ -554,7 +555,7 @@
 
     <script type="text/javascript">
       $.getJSON(
-        "https://raw.githubusercontent.com/hsevenbdl/parcel/main/public/parcel.json",
+        "https://raw.githubusercontent.com/hsevenbdl/parcel/main/public/hampers.json",
         function (result) {
           console.log(result["ok"]);
           var m = result["ok"];
@@ -603,7 +604,7 @@
     <script type="text/javascript">
       document.getElementById("heading").innerHTML +=Capitalize(newPathname);
       $.getJSON(
-        "https://raw.githubusercontent.com/hsevenbdl/parcel/main/public/hampers.json",
+        "https://raw.githubusercontent.com/hsevenbdl/parcel/main/public/parcel.json",
         function (result) {
           console.log(result["ok"]);
           var m = result["ok"];
